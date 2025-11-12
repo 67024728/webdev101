@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>แนะนำตัว — ชื่อคุณ</title>
+  <style>
+    :root{
+      --bg:#fff0f6;
+      --card:#ffe6ef;
+      --accent:#ff85b3;
+      --muted:#7a7a7a;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,Segoe UI,Roboto,'Noto Sans',sans-serif;
+      background:linear-gradient(180deg,#ffe6ef 0%,#fff0f6 100%);
+      color:#3a3a3a;
+      display:grid;
+      place-items:center;
+      min-height:100vh;
+      padding:24px;
+    }
+    .card{
+      background:linear-gradient(180deg,rgba(255,255,255,0.6),rgba(255,255,255,0.3));
+      width:100%;
+      max-width:760px;
+      border-radius:14px;
+      padding:28px;
+      box-shadow:0 8px 30px rgba(255,128,171,0.3);
+      display:grid;
+      grid-template-columns:96px 1fr;
+      gap:18px;
+      align-items:center;
+    }
+    img{
+      width:96px;
+      height:96px;
+      border-radius:12px;
+      object-fit:cover;
+      border:2px solid #ffc2d4;
+    }
+    h1{margin:0;font-size:20px;color:#d63384;}
+    p.lead{margin:6px 0 12px;color:var(--muted);font-size:14px}
+    .tags{display:flex;gap:8px;flex-wrap:wrap}
+    .tag{
+      font-size:12px;
+      padding:6px 8px;
+      border-radius:999px;
+      background:#ffe6ef;
+      border:1px solid #ffc2d4;
+    }
+    .actions{margin-top:12px;display:flex;gap:10px}
+    a.btn{
+      display:inline-block;
+      padding:10px 14px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:600;
+    }
+    .primary{
+      background:linear-gradient(90deg,var(--accent),#ffb3c6);
+      color:white;
+    }
+    .ghost{
+      border:1px solid #ffb3c6;
+      color:#d63384;
+      background:transparent;
+    }
+    footer{
+      margin-top:16px;
+      color:var(--muted);
+      font-size:13px;
+    }
+    @media (max-width:560px){
+      .card{grid-template-columns:1fr;text-align:center}
+      img{margin:0 auto}
+    }
+  </style>
+</head>
+<body>
+  <article class="card" aria-label="โปรไฟล์สั้น">
+    <img src="https://via.placeholder.com/96x96.png?text=คุณ" alt="รูปโปรไฟล์">
+    <div>
+      <h1>สวัสดีครับ/ค่ะ — ชื่อคุณ</h1>
+      <p class="lead">นักพัฒนาเว็บ / นักออกแบบ UI ที่ชอบสร้างสิ่งเล็ก ๆ แต่มีประโยชน์ • ชอบภาษา JavaScript, HTML, CSS</p>
+
+      <div class="tags">
+        <span class="tag">Frontend</span>
+        <span class="tag">React</span>
+        <span class="tag">UI/UX</span>
+        <span class="tag">TypeScript</span>
+      </div>
+
+      <div class="actions">
+        <a class="btn primary" href="mailto:you@example.com?subject=ติดต่อจากเว็บแนะนำตัว">ติดต่อ</a>
+        <a class="btn ghost" href="#about" aria-label="อ่านเพิ่มเติม">อ่านเพิ่มเติม</a>
+      </div>
+
+      <footer id="about">
+        <strong>สรุปสั้น ๆ:</strong> ทำงานเกี่ยวกับเว็บแอป, ชอบเรียนรู้เทคโนโลยีใหม่ ๆ และแก้ปัญหาให้ผู้ใช้ได้ผลลัพธ์ที่ดี
+      </footer>
+    </div>
+  </article>
+</body>
+</html>
